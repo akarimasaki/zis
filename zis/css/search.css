@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* ----------------------------------------------
+   チェックボックスのグループを追加する場合、
+　　　data-filter-xxx-view の xxx を書き換えたものを追加する。
+   上の display: none; の条件はカンマ「,」でつなぐ。
+   これは OR 条件で、どれかに該当するものが設定される。
+   下の display: block; の条件は何もなしでつなぐ。
+   これは AND 条件で、すべてに該当するものが設定される。
+   ＜意味合い＞
+   チェックボックスグループのどれかで非表示になった導入事例リンクは非表示。
+   すべてのチェックボックスグループで表示になった導入事例リンクを表示。
+   ---------------------------------------------- */
+[data-filter-support-view="off"], 
+[data-filter-sector-view="off"],
+[data-filter-count-view="off"] 
+{
+	display: none;
+}
+
+[data-filter-support-view="on"][data-filter-sector-view="on"][data-filter-count-view="on"]
+{
+	display: block;
+}

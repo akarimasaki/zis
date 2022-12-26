@@ -1,0 +1,546 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/*共通のスタイル設定-------------------------------------------------------------------------------------------------------------*/
+
+html {
+	width:100%;
+	height:100%;
+	background-color:#E4EBF0;
+	font-size:62.5%;
+	}
+
+body {
+	height: 100%;   
+	width: 100%;
+	margin: 0;
+	}
+
+
+.wrap {
+position: relative;
+}
+
+img{
+-webkit-backface-visibility: hidden;
+}
+
+.mgb5{margin-bottom:5px;}.mgb10{margin-bottom:10px;}.mgb15{margin-bottom:15px;}.mgb20{margin-bottom:20px;}.mgb25{margin-bottom:25px;}
+.mgb30{margin-bottom:30px;}.mgb35{margin-bottom:35px;}.mgb40{margin-bottom:40px;}.mgb45{margin-bottom:45px;}.mgb50{margin-bottom:50px;}
+.mgb55{margin-bottom:55px;}.mgb60{margin-bottom:60px;}.mgb65{margin-bottom:65px;}.mgb70{margin-bottom:70px;}.mgb75{margin-bottom:75px;}
+.mgb80{margin-bottom:80px;}.mgb85{margin-bottom:85px;}.mgb90{margin-bottom:90px;}.mgb95{margin-bottom:95px;}.mgb100{margin-bottom:100px;}
+.mgt10{margin-top:10px;}.mgt20{margin-top:20px;}.mgt30{margin-top:30px;}.mgt40{margin-top:40px;}.mgt50{margin-top:50px;}
+.mgt60{margin-top:60px;}.mgt70{margin-top:70px;}.mgt80{margin-top:80px;}.mgt90{margin-top:90px;}.mgt100{margin-top:100px;}
+.mgt15{margin-top:15px;}.mgt25{margin-top:25px;}.mgt35{margin-top:35px;}.mgt45{margin-top:45px;}.mgt55{margin-top:55px;}
+.mgt65{margin-top:65px;}.mgt75{margin-top:75px;}.mgt85{margin-top:85px;}.mgt95{margin-top:95px;}
+
+
+
+.itpf-place999{
+	background: rgb(16,31,60);
+	background: linear-gradient(90deg, rgba(16,31,60,1) 0%, rgba(35,58,89,1) 100%);
+	width:auto;
+	height:30px;
+}
+
+.itpf-logo999{
+	width:155px;
+	margin-left: 20px;
+}
+
+
+.komidashi{
+display: block;
+font: var(--unnamed-font-style-normal) normal 700 3.333vw/var(--unnamed-line-spacing-24) var(--unnamed-font-family-source-han-sans-jp);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-001d42);
+text-align: center;
+font: normal normal 900 3.333vw/5vw Source Han Sans JP;
+letter-spacing: 0px;
+color: #001D42;
+}
+
+
+.fukidashi-l{
+margin-right: 1.042vw;
+vertical-align: -20%;
+}
+
+.fukidashi-r{
+margin-left: 1.042vw;
+vertical-align: -20%;
+}
+
+
+.btn{
+cursor: pointer;
+display: block;
+margin: 0 auto;
+width: 50.833vw;
+height: 7.917vw;
+background: #006788 0% 0% no-repeat padding-box;
+border-radius: 14px;
+padding-top: 2.5vw;
+margin-bottom: 20px;
+}
+
+.btn-jirei-1{
+cursor: pointer;
+display: block;
+float: left;
+margin: 10px 10px 0px 0px;
+width: 184px;
+height: 60px;
+background: #006788 0% 0% no-repeat padding-box;
+border-radius: 14px;
+padding-top: 2.5vw;
+}
+
+.btn-jirei-2{
+cursor: pointer;
+display: block;
+float: left;
+margin: 10px 0px 0px 0px;
+width: 184px;
+height: 60px;
+background: #006788 0% 0% no-repeat padding-box;
+border-radius: 14px;
+padding-top: 2.5vw;
+}
+
+
+.btn:hover{
+opacity: 0.7;
+filter: alpha(opacity=70); 
+}
+
+.btn-jirei-1:hover{opacity: 0.7;filter: alpha(opacity=70); }
+.btn-jirei-2:hover{opacity: 0.7;filter: alpha(opacity=70); }
+
+.btn > p{
+text-align: center;
+font: normal 500 3.333vw Source Han Sans JP;
+color: #FFFFFF;
+}
+
+.btn-jirei-1 > p{text-align: center;font: normal 500 3.333vw Source Han Sans JP;color: #FFFFFF;}
+.btn-jirei-2 > p{text-align: center;font: normal 500 3.333vw Source Han Sans JP;color: #FFFFFF;}
+
+.en-komidashi {
+display: block;
+text-align: center;
+font: 700 6.25vw Poppins;
+letter-spacing: 0px;
+color: #001D42;
+}
+
+.sub-contents-wrap{
+overflow: hidden;
+}
+
+.sub-title{
+width: 78.75vw;
+height: 6.25vw;
+background: #001D42 0% 0% no-repeat padding-box;
+opacity: 1;
+padding-top: 5px;
+}
+
+.sub-title p{
+text-align: center;
+font: normal normal bold 3.333vw/5vw Source Han Sans JP;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+
+/* 新着情報部分 */
+
+.dot-line{
+width: 100%;
+border: 1px dotted #001D42;
+}
+
+
+.shinchaku-list{
+cursor: pointer;
+display: block;			
+}
+
+.shinchaku-list a{
+text-decoration: none;	
+color: #001D42;
+text-align: left;
+font: normal normal 500 2.5vw/3.542vw Source Han Sans JP;
+letter-spacing: 0px;
+}
+
+.shinchaku-list:hover{
+opacity: 0.7;
+filter: alpha(opacity=70); 	
+}
+
+
+
+.footer-link-box{
+	margin: 0 auto;
+	width: 432px;
+	padding-top: 20px;
+}
+
+.footer-link{
+cursor: pointer;
+display: block;			
+}
+
+.footer-link a{
+text-decoration: none;	
+color: #fff;
+text-align: left;
+font: normal normal 500 2.5vw/3.542vw Source Han Sans JP;
+letter-spacing: 0px;
+}
+
+.footer-link a:hover{
+opacity: 0.7;
+filter: alpha(opacity=70); 	
+}
+
+
+
+.main-contents-back{
+width: 100%;
+background-color: #fff;
+margin-top: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+overflow: hidden;
+}
+
+.main-contents-wrap{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 93vw;
+
+}
+
+#sns-box{
+	height: 50px;
+	width: 244px;
+	margin: 0 auto;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.sns-icon-1{
+cursor: pointer;
+display: block;
+height: 50px;
+width: 50px;
+margin: 0 auto;
+float: left;
+}
+
+.sns-icon-2{
+cursor: pointer;
+display: block;
+height: 50px;
+width: 50px;
+margin: 0 auto;
+float: left;
+margin-left: 40px;
+}
+
+.sns-icon-1:hover{
+opacity: 0.7;
+filter: alpha(opacity=70); 
+}
+
+.sns-icon-2:hover{
+opacity: 0.7;
+filter: alpha(opacity=70); 
+}
+
+.kanren-kikan-box li{
+line-height: 3rem;
+}
+
+.footer-copy{
+	padding-top:40px;
+	width: 100vw;
+}
+
+.footer-copy p{
+	color: #fff;
+	text-align: center;
+}
+
+
+/*バッジのスタイル設定-------------------------------------------------------------------------------------------------------------*/
+
+
+/* 座談会 */
+.contents-badge-zadankai{
+display: inline-block;
+position: absolute;top: 2px; left: 2px;
+width: 11.667vw;
+height: 11.667vw;
+background: #FCA42C 0% 0% no-repeat padding-box;
+box-shadow: 0px 0.625vw 1.25vw #00000029;
+border-radius: 50%;
+opacity: 1;
+font: normal normal bold 2.5vw/3.542vw Source Han Sans JP;
+color: #FFFFFF;
+text-align:center;
+line-height: 11.667vw;
+z-index: 999;
+}
+
+/* 動画 */
+.contents-badge-movie{
+display: inline-block;
+position: absolute;top: 2px; left: 2px;
+width: 11.667vw;
+height: 11.667vw;
+background: #EB2AC6 0% 0% no-repeat padding-box;
+box-shadow: 0px 0.625vw 1.25vw #00000029;
+border-radius: 50%;
+opacity: 1;
+font: normal normal bold 2.5vw/3.542vw Source Han Sans JP;
+color: #FFFFFF;
+text-align:center;
+line-height: 11.667vw;
+z-index: 999;
+}
+
+
+
+/*モバイルタブレット用のスタイル設定-------------------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 768px){
+
+
+
+/*非表示設定*/
+
+#gnav , #header_ask {
+  display: none;
+}
+
+.only-pc{
+  display: none;
+}
+
+/*基本設定*/
+
+
+/* マージンビューポート単位 */
+.mgb5{margin-bottom:1.042vw;}.mgb10{margin-bottom:2.083vw;}.mgb15{margin-bottom:3.125vw;}.mgb20{margin-bottom:4.167vw;}.mgb25{margin-bottom:5.208vw;}
+.mgb30{margin-bottom:6.25vw;}.mgb35{margin-bottom:7.292vw;}.mgb40{margin-bottom:8.333vw;}.mgb45{margin-bottom:9.375vw;}.mgb50{margin-bottom:10.417vw;}
+.mgb55{margin-bottom:11.458vw;}.mgb60{margin-bottom:12.5vw;}.mgb65{margin-bottom:13.542vw;}.mgb70{margin-bottom:14.583vw;}.mgb75{margin-bottom:15.625vw;}
+.mgb80{margin-bottom:16.667vw;}.mgb85{margin-bottom:17.708vw;}.mgb90{margin-bottom:18.75vw;}.mgb95{margin-bottom:19.792vw;}.mgb100{margin-bottom:20.833vw;}
+.mgt10{margin-top:2.083vw;}.mgt20{margin-top:4.167vw;}.mgt30{margin-top:6.25vw;}.mgt40{margin-top:8.333vw;}.mgt50{margin-top:10.417vw;}
+.mgt60{margin-top:12.5vw;}.mgt70{margin-top:14.583vw;}.mgt80{margin-top:16.667vw;}.mgt90{margin-top:18.75vw;}.mgt100{margin-top:20.833vw;}
+.mgt15{margin-top:3.125vw;}.mgt25{margin-top:5.208vw;}.mgt35{margin-top:7.292vw;}.mgt45{margin-top:9.375vw;}.mgt55{margin-top:11.458vw;}
+.mgt65{margin-top:13.542vw;}.mgt75{margin-top:15.625vw;}.mgt85{margin-top:17.708vw;}.mgt95{margin-top:19.792vw;}
+
+
+
+
+img{
+max-width: 100%;
+height: auto;
+width: auto;　
+}
+
+
+.itpf-place999{
+	background: rgb(16,31,60);
+	background: linear-gradient(90deg, rgba(16,31,60,1) 0%, rgba(35,58,89,1) 100%);
+	width:auto;
+	height:30px;
+}
+
+.itpf-logo999{
+	width:155px;
+	margin-left: 20px;
+}
+
+
+.hon-mon{
+font: normal normal 500 13px/21px Source Han Sans JP;
+letter-spacing: 0px;
+color: #001D42;
+opacity: 1;
+}
+
+#header{
+padding-top: 13px;
+width: 100%;
+height: 7.708vw;
+background: #FFFFFF;
+}
+
+
+.header-logo{
+margin-left: 31px;
+width: 42.708vw;
+height: 5vw;
+}
+
+.header-logo img{
+width: 42.708vw;
+height: 5vw;
+}
+
+#top-banner{
+width: 100%;
+height: 52.083vw;
+background-color: #dcdcdc;
+}
+
+.wrap{
+margin: 0 auto;
+width: 70vw;
+}
+
+.white-box{
+	margin: 0 auto;
+	margin-top: 10.417vw;
+	width: 80vw;
+	padding: 25px 4.167vw 40px 4.167vw;
+	background-color: #fff;
+	border-radius: 2.083vw;
+}
+
+
+
+
+.contents-box{
+margin: 0px 2.083vw 20px 2.083vw;
+float: left;
+display: block;
+cursor: pointer;
+width: 38vw;
+height: 40vw;
+background: #001D42 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+padding: 2.083vw;
+position:relative
+}
+
+.contents-box:hover{
+opacity: 0.9;
+}
+
+
+
+
+.contents-photo{
+width: 100%;
+height: 20.208vw;
+background-color: #fff;
+}
+
+
+.date{
+text-align: left;
+font: normal normal 300 2.083vw/* 1.0rem *//3.125vw/* 1.5rem */ Source Han Sans JP;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.contents-title{
+text-align: left;
+font: normal normal 500 2.5vw/* 1.2rem *//3.542vw/* 1.7rem */ Source Han Sans JP;
+letter-spacing: 0px;
+color: #fff;
+opacity: 1;
+}
+
+.contents-read{
+text-align: left;
+font: normal normal bold 2.917vw/* 1.4rem *//4.167vw/* 2.0rem */ Source Han Sans JP;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.kanren-kikan-box{
+	margin: 0 auto;
+	margin-top: 10.417vw;
+	width: 90vw;
+	padding: 25px 4.167vw 40px 4.167vw;
+}
+
+ul.kanren-kikan-box li:first-child {
+    border-top:1px solid #001D42;
+    border-bottom:1px solid #001D42;
+}
+ 
+ul.kanren-kikan-box li + li {
+    border-bottom:1px solid #001D42;
+}
+
+
+
+#footerlogo{
+	margin: 0 auto;
+	width: 117px;
+height: 66px;
+}
+
+
+footer{
+	width: 100%;
+	height: 150px;
+	background: #001D42 0% 0% no-repeat padding-box;
+ opacity: 1;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*PC用のスタイル設定----------------------------------------------------------------------------------*/
+
+
+@media all and (min-width: 769px){
+
+/*非表示設定*/
+.only-mob{
+  display: none;
+}
+
+
+.itpf-place999{
+	background: rgb(16,31,60);
+	background: linear-gradient(90deg, rgba(16,31,60,1) 0%, rgba(35,58,89,1) 100%);
+	width:auto;
+	height:30px;
+}
+
+.itpf-logo999{
+	width:155px;
+	margin-left: 20px;
+}
+
+
+}
+
+
+
+
+
+
